@@ -15,5 +15,5 @@ export default interface Bond {
 }
 
 export function getBondCurrentPrice(bond: Bond): number {
-  return bond.CurrentPricePercent * bond.Value;
+  return (bond.CurrentPricePercent * bond.Value) / 100;
 }
