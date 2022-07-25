@@ -24,10 +24,9 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build && yarn run msw:cleanup",
+    "build": "GENERATE_SOURCEMAP=false craco build",
     "test": "craco test",
-    "eject": "craco eject",
-    "msw:cleanup": "rm build/mockServiceWorker.js"
+    "eject": "craco eject"
   },
   "eslintConfig": {
     "extends": [
